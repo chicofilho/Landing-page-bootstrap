@@ -49,7 +49,7 @@
       <div class="row">
 
         <div class="span12">
-          <h1 class="logo">Simple Landing</h1>
+          <h1 class="logo">Say2me</h1>
         </div>
 
 <!--         <div class="span12">
@@ -63,38 +63,24 @@
       </div>
       <div class="row">
         <div class="span6">
-          <h2 class="about">About This Template</h2>
-          <p class="info">This is a simple php based landing page that will help you collect information from your visitors via a validating php email form. We have included instructions to make it easy. Template built with <span class="heart"><3</span> by <a href="http://www.littlesparkvt.com">LittleSpark</a> If you have a minute, please check out our <a href="http://wrapbootstrap.com/user/littlesparkvt">other bootstrap templates </a>.</p>
+          <h2 class="about">Aula de AWS</h2>
+          <p class="info">Esta é uma landing page simples utilizada como exemplo para ensinar como vocês criam um servidor na Amazon AWS. Cultivamos a filosia de melhoria contínua, queremos saber sua opinião a respeito desta aula.  <span class="heart"></span> <a href="http://www.say2me.com.br/avaliar">Envie agora suas crítias elogios e sugestões</a>.</p>
         </div>
 
 
 
         <div class="span6">
-          <img src="img/1.png">
+          <img src="img/logo_preta_650px.png">
           <div class="form">
 
    <div id="contact_form">
-      <form id="formID" action="index.php" method="post">
+      <form id="formID" action="mailto:francisco@say2me.com.br" method="GET">
         <p>
-          <input type="text" name="email" id="email" class="validate[required,custom[email]] text-input input-text m-wrap m-ctrl" placeholder="Your Email Address" />
-          <input type="submit" name="submit" id="submit" value="Sign Up" class="m-btn blue" />
+          <!-- <input type="text" name="email" id="email" class="validate[required,custom[email]] text-input input-text m-wrap m-ctrl" placeholder="Your Email Address" /> -->
+          <input type="submit" name="submit" id="submit" value="Receba novidades sobre o lançamento" class="m-btn blue" />
         </p>
       </form>
-      <div id="code">
-        <?php
-        if (isset($_POST['submit']) or isset($_POST['submit_x']))
-    {       
-          $to = "youremailaddress@email.com";
-          $subject = "Add this address to your mailing list";
-          $email_field = $_POST['email'];
-          $body = "E-Mail\n$email_field";
-           
-          echo "Message Sent";
-          mail($to, $subject, $body);
-        
-        } else { }
-        ?>
-      </div>
+      
     </div>
     </div>
         </div>
@@ -104,7 +90,7 @@
     <div class="row">
       <div class="span12">
           
-          <h2 class="about">Time until site launch:</h2>
+          <h2 class="about">Tempo restantes para você lançar sua landing page:</h2>
           <div id="counter">
             <!--counter is here -->
           </div>
@@ -116,7 +102,7 @@
       <footer>
         <div class="row">
         <div class="span4">
-          <p>&copy; <a href="http://www.yourcompany.com">Your Company</a> 2012</p>
+          <p>&copy; <a href="http://www.say2me.com.br">Say2me</a> 2012</p>
         </div>
         </div>
       </footer>
@@ -131,7 +117,7 @@
 <!--
 // CHANGE THESE NUMBERS TO SPECIFY YOUR LAUNCH DATE
     $(function () {
-      var liftoffTime = new Date(2013, 6 - 1, 22, 11, 00);
+      var liftoffTime = new Date(2014, 2-1, 12, 21, 00);
       $('#counter').countdown({until: liftoffTime, 
         layout: '{dn} {dl}, {hn} {hl}, {mnn} {ml}, {snn} {sl}'});
     });
