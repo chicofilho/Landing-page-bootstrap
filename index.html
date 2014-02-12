@@ -2,127 +2,224 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Simple Landing Page</title>
-    <meta name="description" content="Littlespark Coming soon page">
-    <meta name="author" content="littlespark VT">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <title>FLATTY - Free Bootstrap 3 Landing Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/m-buttons.css" rel="stylesheet">
-    <link href="css/m-forms.css" rel="stylesheet">
-    <link href="css/countdown.css" rel="stylesheet">
-    <link href="css/validationEngine.jquery.css" rel="stylesheet">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.validationEngine.js" type="text/javascript"></script>
-    <script type="text/javascript"> 
-        $(document).ready(function() {
-          // SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
-          $("#formID").validationEngine({
-            success :  false,
-            failure : function() {}
-          })
-          //$.validationEngine.buildPrompt("#date","This is an example","error")       // Exterior prompt build example
-          //$.validationEngine.closePrompt(".date")                      // Exterior prompt close example
-        });
-    </script>
   </head>
 
   <body>
 
-    <div class="container">
-      <div class="row">
-
-        <div class="span12">
-          <h1 class="logo">Say2me</h1>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.say2me.com.br"><b>Say2me</b></a>
         </div>
-
-<!--         <div class="span12">
-          <h2>Progress</h2>
-          <div class="progress progress-striped active">
-            <div class="bar" style="width: 65%;"></div>
-          </div>
-        </div> -->
-
-        
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.say2me.com.br/home">Já é um usuário?</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-      <div class="row">
-        <div class="span6">
-          <h2 class="about">Aula de AWS</h2>
-          <p class="info">Esta é uma landing page simples utilizada como exemplo para ensinar como vocês criam um servidor na Amazon AWS. Cultivamos a filosia de melhoria contínua, queremos saber sua opinião a respeito desta aula.  <span class="heart"></span> <a href="http://www.say2me.com.br/avaliar">Envie agora suas crítias elogios e sugestões</a>.</p>
-        </div>
-
-
-
-        <div class="span6">
-          <img src="img/logo_preta_650px.png">
-          <div class="form">
-
-   <div id="contact_form">
-      <form id="formID" action="mailto:francisco@say2me.com.br" method="GET">
-        <p>
-          <!-- <input type="text" name="email" id="email" class="validate[required,custom[email]] text-input input-text m-wrap m-ctrl" placeholder="Your Email Address" /> -->
-          <input type="submit" name="submit" id="submit" value="Receba novidades sobre o lançamento" class="m-btn blue" />
-        </p>
-      </form>
-      
     </div>
-    </div>
-        </div>
-      </div>
 
-    <hr>
-    <div class="row">
-      <div class="span12">
-          
-          <h2 class="about">Tempo restantes para você lançar sua landing page:</h2>
-          <div id="counter">
-            <!--counter is here -->
-          </div>
-          
-        </div>
-      </div>      
-      <hr>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Avalie a satisfação de seus clientes de forma simples e eficiente! </h1>
+					<form class="form-inline" role="form" action="mailto:contato@say2me.com.br" method="GET">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Seu endereço de email">
+					  </div>
+					  <button type="submit" class="btn btn-warning btn-lg">Assine agora!</button>
+					</form>					
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-6">
+					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
+				</div><!-- /col-lg-6 -->
+				
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>O QUE É O SAY2ME</h1>
+				<h3>É o melhor sistema online﻿ de avaliação da satisfação de clientes do mercado!</h3>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<img src="assets/img/ser01.png" width="180" alt="">
+				<h4>1 - Disponível em qualquer plataforma</h4>
+				<p>O Say2me pode ser acessado por qualquer browser. Não perca tempo, <a href='http://www.say2me.com.br/avaliar'>avalie</a> agora mesmo</p>
+			</div><!--/col-lg-4 -->
 
-      <footer>
-        <div class="row">
-        <div class="span4">
-          <p>&copy; <a href="http://www.say2me.com.br">Say2me</a> 2012</p>
-        </div>
-        </div>
-      </footer>
+			<div class="col-lg-4">
+				<img src="assets/img/ser02.png" width="180" alt="">
+				<h4>2 - Acompanhe por Email</h4>
+				<p>Com o Say2me, você pode saber o que os seus clientes estão pensando de maneira simples, organizada e em tempo real!</p>
 
-    </div> <!-- /container -->
-    <!-- Le javascript
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img src="assets/img/ser03.png" width="180" alt="">
+				<h4>3 - Visualize relatórios</h4>
+				<p>Receba críticas, elogios e sugestões onde quer que você esteja. Responda seus clientes através de um canal de comunicação direto e, até mesmo, fidelize-os com prêmios e descontos.</p>
+
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div class="container">
+		<hr>
+		<div class="row centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<form class="form-inline" role="form" action="mailto:contato@say2me.com.br" method="GET">
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Seu endereço de email">
+				  </div>
+				  <button type="submit" class="btn btn-warning btn-lg">Assine agora!</button>
+				</form>					
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+		<hr>
+	</div><!-- /container -->
+	
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>COMO FUNCIONA</h1>
+				<h3>Receba suas avaliações ao vivo, de forma organizada e sem interferências de terceiros.</h3>
+			</div>
+		</div><!-- /row -->
+	
+		<! -- CAROUSEL -->
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <img src="assets/img/p01.png" alt="">
+				    </div>
+				    <div class="item">
+				      <img src="assets/img/p02.png" alt="">
+				    </div>
+				    <div class="item">
+				      <img src="assets/img/p03.png" alt="">
+				    </div>
+				  </div>
+				</div>			
+			</div><!-- /col-lg-8 -->
+		</div><!-- /row -->
+	</div><! --/container -->
+	
+	<div class="container">
+		<hr>
+		<div class="row centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<form class="form-inline" role="form" action="mailto:contato@say2me.com.br" method="GET">
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Seu endereço de email">
+				  </div>
+				  <button type="submit" class="btn btn-warning btn-lg">Assine agora!</button>
+				</form>					
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+		<hr>
+	</div><!-- /container -->
+
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>Nosso time!</h1>
+				<h3>Uma equipe altamente qualificada e preparada para resolver qualquer problema. O <a href='http://www.say2me.com.br'>Say2me</a> não para de evoluir</h3>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<img class="img-circle" src="assets/img/pic1.jpg" width="140" alt="">
+				<h4>Filipe Magalhães</h4>
+				<p>Conhecido como o maior empreendedor do Mundo, vendeu 3 empresas antes de entrar na faculdade. Até hoje não se viu empreendedor com mais de 1,98m de altura!</p>
+				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img class="img-circle" src="assets/img/pic2.jpg" width="140" alt="">
+				<h4>Francisco Pimentel</h4>
+				<p>Trigêmeo, filho de chico pai, mais conhecido como o Cabra da Peste. Rumores apontam que ele executou seu primeiro programa de copmutador em uma caixa de fósforos!</p>
+				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+				<img class="img-circle" src="assets/img/pic3.jpg" width="140" alt="">
+				<h4>Luan Duarte</h4>
+				<p>Sua capacidade de empreender ultrapassa fronteiras. Inovador e vendedor de origem, aos 7 anos se tornou conhecido por ser a primeira pessoa a vender areia no deserto!</p>
+				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div class="container">
+		<hr>
+		<div class="row centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<form class="form-inline" role="form" action="mailto:contato@say2me.com.br" method="GET">
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Seu endereço de email">
+				  </div>
+				  <button type="submit" class="btn btn-warning btn-lg">Assine agora!</button>
+				</form>					
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+		<hr>
+	</div><!-- /container -->
+	
+
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
-  <script type="text/javascript" src="js/jquery.countdown.js"></script>
-    <script type="text/javascript">
-<!--
-// CHANGE THESE NUMBERS TO SPECIFY YOUR LAUNCH DATE
-    $(function () {
-      var liftoffTime = new Date(2014, 2-1, 12, 21, 00);
-      $('#counter').countdown({until: liftoffTime, 
-        layout: '{dn} {dl}, {hn} {hl}, {mnn} {ml}, {snn} {sl}'});
-    });
--->
-    </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
-
 </html>
