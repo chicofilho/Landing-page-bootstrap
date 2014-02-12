@@ -54,6 +54,7 @@ p {
 /* Links */
 a {
     color: #3498db;
+    cursor: pointer;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -119,6 +120,28 @@ i {
 	color: #3498db; 
 }
 
+.social-icon.facebook, .social-icon.twitter, .social-icon.github  {
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.social-icon.facebook {
+    background-image: url(../img/facebook.png)
+}
+
+.social-icon.twitter {
+    background-image: url(../img/twitter.png)
+}
+
+.social-icon.github {
+    background-image: url(../img/github.png)
+}
+
+.clear {
+    clear: both;
+}
 
 /* HeaderWrap */
 #headerwrap {
@@ -149,4 +172,10 @@ i {
 	font-size: 45px;
 	font-weight: 300;
 	letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+    #powered-by {
+        display: none;
+    } 
 }
