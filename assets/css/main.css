@@ -174,8 +174,45 @@ i {
 	letter-spacing: 1px;
 }
 
+@media (max-width: 1200px) {
+    #headerwrap .col-lg-6 {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 990px) {
+    #headerwrap {
+        text-align: center;
+    }
+    #headerwrap .col-lg-6 {
+        width: inherit;
+        float: none;
+    }
+
+    .img-responsive {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+}
+
 @media (max-width: 480px) {
     #powered-by {
         display: none;
     } 
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .form-group input {
+        margin: 0 auto; 
+    }
 }
+
